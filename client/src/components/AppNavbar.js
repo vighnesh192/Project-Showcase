@@ -81,17 +81,49 @@ function AppNavbar(props) {
 					<Divider />
 				</ListItem>
 				<ListItem button>
-					<ListItemLink href="/signup">
-						<ListItemText primary="Signup" />
+					<ListItemLink href="/projects">
+						<ListItemText primary="Projects" />
 					</ListItemLink>
 					<Divider />
 				</ListItem>
 				<ListItem button>
-					<ListItemLink href="/login">
-						<ListItemText primary="Login" />
+					<ListItemLink href="/leaderboard">
+						<ListItemText primary="Leaderboard" />
 					</ListItemLink>
 					<Divider />
 				</ListItem>
+				{!props.isLoggedIn && (
+					<React.Fragment>
+						<ListItem button>
+							<ListItemLink href="/signup">
+								<ListItemText primary="Signup" />
+							</ListItemLink>
+							<Divider />
+						</ListItem>
+						<ListItem button>
+							<ListItemLink href="/login">
+								<ListItemText primary="Login" />
+							</ListItemLink>
+							<Divider />
+						</ListItem>
+					</React.Fragment>
+				)}
+				{props.isLoggedIn && (
+					<React.Fragment>
+						<ListItem button>
+							<ListItemLink href="/post-project">
+								<ListItemText primary="Upload" />
+							</ListItemLink>
+							<Divider />
+						</ListItem>
+						<ListItem button>
+							<ListItemLink href="/logout">
+								<ListItemText primary="Logout" />
+							</ListItemLink>
+							<Divider />
+						</ListItem>
+					</React.Fragment>
+				)}
 			</List>
 		</div>
 	);
