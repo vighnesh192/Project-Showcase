@@ -16,6 +16,23 @@ function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    /*async function fetchData() {
+        const res = await axios.get('/users');
+        setUsers(res.data);
+        return res;
+    }*/
+    async function fetchData() {
+    if(localStorage.getItem('token') != null && localStorage.getItem('token') != undefined) {
+      setIsLoggedIn(true);
+    }
+    else {
+      setIsLoggedIn(false);
+    }
+  }    
+      fetchData();
+  }, []) 
+
   let setLoggedInState = (localStrg) => {
     if(localStrg != null && localStrg != undefined) {
       if(localStrg) {
