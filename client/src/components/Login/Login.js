@@ -57,7 +57,7 @@ function UserDetails(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3000/users/login', {
+        axios.post('/users/login', {
           username: username,
           password: password
         }, {withCredentials: true})
