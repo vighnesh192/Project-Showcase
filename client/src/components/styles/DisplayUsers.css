@@ -1,0 +1,93 @@
+#display-users {
+    padding: 0 15vw;
+}
+
+#loader {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#display-users h1 {
+    margin-top: 7%;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+.card {
+    width: 90%;
+    height: 5rem;
+    background-color: #FAFAFA;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);  
+    border-radius: 10px;
+    margin-bottom: 4%;
+    padding: 1rem 1rem 0.8rem 1rem;
+    display: flex;
+}
+
+.card .user-details {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card .user-details .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .user-details .bottom .icons a {
+    margin-left: 0.6rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.card .user-details .bottom .icons a:hover {
+    color: black;
+}
+
+.card .user-details .bottom p {
+    font-size: 0.9rem;
+}
+
+.card .dp {
+    width: 3.4rem;
+    height: 3.2rem;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+}
+
+@media(min-width: 769px) {
+    #cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 38%;
+        margin-right: 5%;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+        margin-bottom: 3%;
+        padding: 1rem 3rem 0.8rem 1rem;
+    }
+}
+
+@media(max-width: 769px) {
+    .card .user-details h3 {
+        font-size: 1rem;
+    }
+
+    #display-users {
+        padding: 0 6vw;
+    }
+}

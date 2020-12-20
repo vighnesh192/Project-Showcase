@@ -1,0 +1,15 @@
+.confirm {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#confirm-btn {
+    margin-left: 1.5rem;
+}
+
+#title {
+    margin-left: auto;
+    margin-right: auto;
+}
