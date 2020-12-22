@@ -59,7 +59,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/students" /*render={(props) => <DisplayUsers {...props} />}*/ component={DisplayUsers}  />  
-          <Route exact path="/projects" render={(props) => <Projects {...props} isLoggedIn={isLoggedIn} setLoggedInState={setLoggedInState} />} />  
+          <Route exact path="/all-projects" render={(props) => <Projects {...props} isLoggedIn={isLoggedIn} setLoggedInState={setLoggedInState} />} />  
           <Route exact path="/leaderboard" /*render={(props) => <DisplayUsers {...props} />}*/ component={Leaderboard}  />  
           <Route exact path="/signup" /*render={(props) => <DisplayUsers {...props} />}*/ component={Signup}  />  
           <Route exact path="/login" render={(props) => <Login {...props} isLoggedIn={isLoggedIn} setLoggedInState={setLoggedInState} />}  />  

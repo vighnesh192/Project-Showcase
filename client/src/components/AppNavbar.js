@@ -81,7 +81,7 @@ function AppNavbar(props) {
 					<Divider />
 				</ListItem>
 				<ListItem button>
-					<ListItemLink href="/projects">
+					<ListItemLink href="/all-projects">
 						<ListItemText primary="Projects" />
 					</ListItemLink>
 					<Divider />
