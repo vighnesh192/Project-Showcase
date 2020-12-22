@@ -137,7 +137,7 @@ function AppNavbar(props) {
 	return (
 		<nav>
 			<NavLink id="logo" to="/" className="Link">
-				<h2>Placell</h2>
+				<h2>Project Showcase</h2>
 			</NavLink>
 			<ul>
 				<li>
