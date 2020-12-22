@@ -151,7 +151,7 @@ function AppNavbar(props) {
 					</NavLink>
 				</li>
 				<li>
-					<NavLink activeClassName="active" className="Link" to="/projects">
+					<NavLink activeClassName="active" className="Link" to="/all-projects">
 						Projects
 					</NavLink>
 				</li>
