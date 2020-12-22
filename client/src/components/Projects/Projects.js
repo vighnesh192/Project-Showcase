@@ -321,7 +321,7 @@ export default function EnhancedTable(props) {
 
 			axios
 			.put(
-				"http://localhost:3000/projects",
+				"/projects",
 				{
 					id,
 					upvotes: rows[indexToChange].upvotes
@@ -353,7 +353,7 @@ export default function EnhancedTable(props) {
 
 			axios
 			.put(
-				"http://localhost:3000/projects",
+				"/projects",
 				{
 					id,
 					upvotes: rows[indexToChange].upvotes

@@ -58,7 +58,7 @@ function PostProject(props) {
 		e.preventDefault();
 		axios
 			.post(
-				"http://localhost:3000/projects",
+				"/projects",
 				{
 					projectName,
 					projectDescription,
